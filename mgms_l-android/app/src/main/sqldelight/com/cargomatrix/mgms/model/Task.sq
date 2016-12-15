@@ -1,0 +1,189 @@
+CREATE TABLE task (
+    _id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    task_id TEXT UNIQUE NOT NULL,
+    action_id INTEGER AS Integer NOT NULL,
+    name TEXT,
+    date INTEGER AS 'java.util.Date' NOT NULL,
+    owner TEXT,
+    users TEXT,
+    status TEXT,
+    entity_type TEXT,
+    reference TEXT UNIQUE NOT NULL,
+    carrier_namber TEXT,
+    mawb TEXT,
+    hawb TEXT,
+    origin TEXT,
+    destination TEXT,
+    total_pieces INTEGER AS Integer NOT NULL,
+    total_weight REAL AS Float NOT NULL,
+    weight_uom TEXT,
+    start_date INTEGER AS 'java.util.Date' NOT NULL,
+    end_date INTEGER AS 'java.util.Date' NOT NULL
+
+);
+
+-- Further SQL statements are proceeded by an identifier. This will be used to name the constant
+
+-- in the generated Java code.
+
+create_task_id_index:
+CREATE INDEX task_task_id_index
+ON task(task_id);
+
+create_action_id_index:
+CREATE INDEX task_action_id_index
+ON task(action_id);
+
+create_date_index:
+CREATE INDEX task_date_index
+ON task(date);
+
+create_status_index:
+CREATE INDEX task_status_index
+ON task(status);
+
+create_reference_index:
+CREATE INDEX task_reference_index
+ON task(reference);
+
+select_by_task_id:
+SELECT *
+FROM task
+WHERE task.task_id = ?;
+
+select_by_action_id:
+SELECT *
+FROM task
+WHERE task.action_id = ?;
+
+select_by_reference:
+SELECT *
+FROM task
+WHERE task.action_id = ?
+AND task.reference LIKE ?;
+
+select_by_action_id_order_by_date_asc:
+SELECT *
+FROM task
+WHERE task.action_id = ?
+ORDER BY date ASC;
+
+select_by_action_id_order_by_date_desc:
+SELECT *
+FROM task
+WHERE task.action_id = ?
+ORDER BY date DESC;
+
+select_by_status:
+SELECT *
+FROM task
+WHERE task.action_id = ? AND task.status = ?
+AND (owner = ? OR users REGEXP ?);
+
+select_by_status_order_by_date_asc:
+SELECT *
+FROM task
+WHERE task.action_id = ? AND task.status = ?
+AND (owner = ? OR users REGEXP ?)
+ORDER BY date ASC;
+
+select_by_status_order_by_date_desc:
+SELECT *
+FROM task
+WHERE task.action_id = ? AND task.status = ?
+AND (owner = ? OR users REGEXP ?)
+ORDER BY date DESC;
+
+select_not_completed:
+SELECT *
+FROM task
+WHERE task.action_id = ?
+AND task.status NOT LIKE 'Completed'
+AND (owner = ? OR users REGEXP ?);
+
+select_not_completed_order_by_date_asc:
+SELECT *
+FROM task
+WHERE task.action_id = ? AND task.status NOT LIKE 'Completed'
+AND (owner = ? OR users REGEXP ?)
+ORDER BY date ASC;
+
+select_not_completed_order_by_date_desc:
+SELECT *
+FROM task
+WHERE task.action_id = ? AND task.status NOT LIKE 'Completed'
+AND (owner = ? OR users REGEXP ?)
+ORDER BY date DESC;
+
+select_by_status_and_reference:
+SELECT *
+FROM task
+WHERE task.action_id = ? AND task.status = ?
+AND (owner = ? OR users REGEXP ?)
+AND task.reference LIKE ?;
+
+select_by_status_and_reference_order_by_date_asc:
+SELECT *
+FROM task
+WHERE task.action_id = ? AND task.status = ?
+AND (owner = ? OR users REGEXP ?)
+AND task.reference LIKE ?
+ORDER BY date ASC;
+
+select_by_status_and_reference_order_by_date_desc:
+SELECT *
+FROM task
+WHERE task.action_id = ? AND task.status = ?
+AND (owner = ? OR users REGEXP ?)
+AND task.reference LIKE ?
+ORDER BY date DESC;
+
+select_not_completed_by_reference:
+SELECT *
+FROM task
+WHERE task.action_id = ?
+AND task.status NOT LIKE 'Completed'
+AND (owner = ? OR users REGEXP ?)
+AND task.reference LIKE ?;
+
+select_not_completed_by_reference_order_by_date_asc:
+SELECT *
+FROM task
+WHERE task.action_id = ? AND task.status NOT LIKE 'Completed'
+AND (owner = ? OR users REGEXP ?)
+AND task.reference LIKE ?
+ORDER BY date ASC;
+
+select_not_completed_by_reference_order_by_date_desc:
+SELECT *
+FROM task
+WHERE task.action_id = ? AND task.status NOT LIKE 'Completed'
+AND (owner = ? OR users REGEXP ?)
+AND task.reference LIKE ?
+ORDER BY date DESC;
+
+select_not_assigned_order_by_date_asc:
+SELECT *
+FROM task
+WHERE task.action_id = ? AND task.status = 'Not Assigned'
+ORDER BY date ASC;
+
+select_not_assigned_order_by_date_desc:
+SELECT *
+FROM task
+WHERE task.action_id = ? AND task.status = 'Not Assigned'
+ORDER BY date DESC;
+
+select_not_assigned_by_reference_order_by_date_asc:
+SELECT *
+FROM task
+WHERE task.action_id = ? AND task.status = 'Not Assigned'
+AND task.reference LIKE ?
+ORDER BY date ASC;
+
+select_not_assigned_by_reference_order_by_date_desc:
+SELECT *
+FROM task
+WHERE task.action_id = ? AND task.status = 'Not Assigned'
+AND task.reference LIKE ?
+ORDER BY date DESC;

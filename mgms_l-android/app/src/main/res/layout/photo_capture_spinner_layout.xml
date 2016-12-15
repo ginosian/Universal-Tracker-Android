@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/status_spinner_layout"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/actionBarSize"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:background="@drawable/ripple_bg_white"
+    android:clickable="true"
+    android:elevation="@dimen/z_toolbar"
+    android:orientation="horizontal"
+    android:paddingEnd="@dimen/spacing_normal"
+    android:paddingStart="@dimen/spacing_normal"
+    android:visibility="gone"
+    tools:showIn="@layout/activity_photo_capture"
+    tools:visibility="visible">
+
+    <ImageView
+        android:id="@+id/status_spinner_icon"
+        android:layout_width="@dimen/spacing_large"
+        android:layout_height="@dimen/spacing_large"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="@null" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="@dimen/spacing_tiny"
+        android:layout_marginStart="@dimen/spacing_big"
+        android:layout_marginTop="@dimen/spacing_tiny"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/status_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="@dimen/spacing_normal"
+            android:layout_toStartOf="@+id/status_spinner_date"
+            android:singleLine="true"
+            android:text="@string/title.cargo_photo_capture"
+            android:textColor="@color/black87"
+            android:textSize="@dimen/font_large" />
+
+        <TextView
+            android:id="@+id/status_spinner_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/status_spinner"
+            android:text="@string/subtitle.tasks"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:id="@+id/status_spinner_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="@string/subtitle.tasks"
+            android:textSize="@dimen/font_normal"
+            tools:text="14:12" />
+    </RelativeLayout>
+</LinearLayout>

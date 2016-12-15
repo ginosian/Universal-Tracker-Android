@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.margin.mgms.view.SquareImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/photo_iv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:contentDescription="@null"
+    android:padding="@dimen/photo_card_inner_padding"
+    android:scaleType="centerCrop" />

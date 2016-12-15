@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="Lipstick" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Lipstick.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="Lipstick.Main" parent="Lipstick.NoActionBar" />
+
+    <style name="Lipstick.Photos" />
+
+    <style name="Lipstick.Card" />
+
+    <style name="Lipstick.PhotoGallery" parent="Lipstick.NoActionBar">
+        <item name="colorPrimary">@android:color/transparent</item>
+    </style>
+
+    <style name="Lipstick.Login" parent="Lipstick.NoActionBar">
+        <item name="android:colorControlActivated">@color/black54</item>
+    </style>
+
+    <style name="Lipstick.ConditionReport" parent="Lipstick.NoActionBar">
+        <item name="android:windowTranslucentStatus">false</item>
+    </style>
+
+    <style name="Lipstick.SharePhotosActivity" parent="Lipstick.NoActionBar">
+        <item name="android:windowTranslucentStatus">false</item>
+    </style>
+
+    <style name="Lipstick.TaskManager" parent="Lipstick.NoActionBar" />
+
+    <style name="Lipstick.PhotoCapture" parent="Lipstick.NoActionBar">
+        <item name="android:windowTranslucentStatus">false</item>
+    </style>
+
+    <style name="Lipstick.NoActionBar.StatusBarColored" parent="Lipstick.NoActionBar" />
+
+    <style name="Lipstick.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Lipstick.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="LipstickOverlay" parent="ThemeOverlay.AppCompat" />
+
+    <style name="MainOverlay" parent="LipstickOverlay">
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+</resources>

@@ -1,0 +1,30 @@
+CREATE TABLE special_handling (
+    _id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    is_expedite INTEGER AS Boolean NOT NULL DEFAULT 0,
+    alert_count INTEGER AS Integer NOT NULL,
+    is_temp_controlled INTEGER AS Boolean NOT NULL DEFAULT 0,
+    is_hazmat INTEGER AS Boolean NOT NULL DEFAULT 0,
+    is_reopened INTEGER AS Boolean NOT NULL DEFAULT 0,
+    is_osd INTEGER AS Boolean NOT NULL DEFAULT 0,
+    is_unknown_snipper INTEGER AS Boolean NOT NULL DEFAULT 0,
+    screening_status TEXT,
+    is_overage INTEGER AS Boolean NOT NULL DEFAULT 0,
+    is_shortage INTEGER AS Boolean NOT NULL DEFAULT 0,
+    is_left_behind INTEGER AS Boolean NOT NULL DEFAULT 0,
+    task_id TEXT NOT NULL,
+    FOREIGN KEY(task_id) REFERENCES task(task_id) ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+-- Further SQL statements are proceeded by an identifier. This will be used to name the constant
+
+-- in the generated Java code.
+
+create_task_id_index:
+CREATE INDEX special_handling_task_id_index
+ON special_handling(task_id);
+
+select_by_task_id:
+SELECT *
+FROM special_handling
+WHERE task_id = ?
+LIMIT 1;

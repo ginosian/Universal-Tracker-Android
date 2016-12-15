@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_contact"
+    style="@style/ContactCard"
+    android:layout_marginEnd="@dimen/spacing_smaller"
+    android:layout_marginStart="@dimen/spacing_smaller">
+
+    <LinearLayout
+        android:id="@+id/contact_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/list_item_height"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/spacing_normal"
+            android:paddingEnd="@dimen/spacing_normal"
+            android:paddingStart="@dimen/spacing_normal"
+            android:paddingTop="@dimen/spacing_larger">
+
+            <TextView
+                android:id="@+id/summary_header_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black87"
+                android:textSize="@dimen/font_huge"
+                tools:text="JFK-009-4G12345-YYZ" />
+
+            <TextView
+                android:id="@+id/summary_header_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black54"
+                android:textSize="@dimen/font_large"
+                tools:text="@string/title.sender" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/summary_sender_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/list_item_height"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_normal">
+
+            <TextView
+                android:id="@+id/summary_sender_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black87"
+                android:textSize="@dimen/font_large"
+                tools:text="SIEMENS AG" />
+
+            <TextView
+                android:id="@+id/summary_sender_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title.sender"
+                android:textColor="@color/black54"
+                android:textSize="@dimen/font_normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/summary_receiver_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/list_item_height"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_normal">
+
+            <TextView
+                android:id="@+id/summary_receiver_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black87"
+                android:textSize="@dimen/font_large"
+                tools:text="SIEMENS INDUSTRY, INC." />
+
+            <TextView
+                android:id="@+id/summary_receiver_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title.receiver"
+                android:textColor="@color/black54"
+                android:textSize="@dimen/font_normal" />
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/divider"
+            layout="@layout/divider" />
+
+        <LinearLayout
+            android:id="@+id/container_special_handling"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/spacing_larger"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/spacing_smaller"
+            android:paddingEnd="@dimen/spacing_normal"
+            android:paddingStart="@dimen/spacing_normal"
+            android:paddingTop="@dimen/spacing_smaller" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

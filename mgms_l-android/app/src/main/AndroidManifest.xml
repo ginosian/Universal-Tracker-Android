@@ -1,0 +1,72 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.margin.mgms">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".LipstickApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Lipstick">
+
+        <!--<activity-->
+        <!--android:name=".activity.MainActivity"-->
+        <!--android:theme="@style/Lipstick.Main"-->
+        <!--&gt;-->
+        <!--<intent-filter>-->
+        <!--<action android:name="android.intent.action.MAIN"/>-->
+        <!--<category android:name="android.intent.category.LAUNCHER"/>-->
+        <!--</intent-filter>-->
+        <!--</activity>-->
+
+        <activity
+            android:name=".activity.LoginActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/Lipstick.Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.TaskManagerActivity"
+            android:label="@string/title.taskmanager"
+            android:screenOrientation="portrait"
+            android:theme="@style/Lipstick.TaskManager" />
+
+        <activity
+            android:name=".activity.PhotosActivity"
+            android:theme="@style/Lipstick.Photos" />
+
+        <activity
+            android:name=".activity.CardActivity"
+            android:theme="@style/Lipstick.Card" />
+
+        <activity
+            android:name=".activity.PhotoCaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Lipstick.PhotoCapture" />
+
+        <activity
+            android:name=".activity.ConditionReportActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Lipstick.ConditionReport" />
+
+        <activity
+            android:name=".activity.MgmsPhotoGalleryActivity"
+            android:theme="@style/Lipstick.PhotoGallery" />
+
+        <activity
+            android:name=".activity.SharePhotosActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Lipstick.SharePhotosActivity" />
+
+    </application>
+
+</manifest>

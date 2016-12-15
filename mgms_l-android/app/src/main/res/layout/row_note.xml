@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/note_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/spacing_tiny"
+    android:paddingEnd="@dimen/spacing_smallest"
+    android:paddingTop="@dimen/spacing_tiny"
+    tools:ignore="RtlSymmetry">
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/note_title"
+        android:layout_alignEnd="@+id/note_title"
+        android:layout_alignStart="@+id/note_title"
+        android:layout_alignTop="@+id/note_title"
+        android:adjustViewBounds="true"
+        android:contentDescription="@null" />
+
+    <TextView
+        android:id="@+id/note_title"
+        style="@style/TextAppearance.Severity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/spacing_smaller"
+        android:paddingEnd="@dimen/spacing_small"
+        android:paddingStart="@dimen/spacing_small"
+        android:paddingTop="@dimen/spacing_smaller"
+        tools:text="Some text" />
+
+</RelativeLayout>

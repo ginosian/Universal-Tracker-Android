@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/divider"
+        layout="@layout/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+
+    <TextView
+        android:id="@+id/view_more"
+        style="@style/TextAppearance.Card.Footer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacing_huge"
+        android:layout_marginEnd="@dimen/spacing_normal"
+        android:layout_marginStart="@dimen/spacing_normal"
+        android:background="@color/white"
+        android:drawableEnd="@drawable/ic_keyboard_arrow_down_black_24dp"
+        android:padding="@dimen/spacing_smaller"
+        android:text="@string/content.view_full_uld"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <android.support.v4.widget.Space
+        android:id="@+id/bottom_space"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacing_smaller"
+        android:visibility="gone" />
+
+</LinearLayout>

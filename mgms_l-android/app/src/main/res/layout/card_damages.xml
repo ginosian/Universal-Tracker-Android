@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_photos"
+    style="@style/DamagesCard"
+    android:layout_marginEnd="@dimen/spacing_smaller"
+    android:layout_marginStart="@dimen/spacing_smaller">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@+id/damages_header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/card_header_height"
+            android:paddingBottom="@dimen/spacing_normal"
+            android:paddingEnd="@dimen/spacing_normal"
+            android:paddingStart="@dimen/spacing_normal"
+            android:paddingTop="@dimen/spacing_larger">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/title.damages"
+                android:textColor="@color/black87"
+                android:textSize="@dimen/font_huge" />
+        </FrameLayout>
+
+        <ViewStub
+            android:id="@+id/viewstub_empty_damages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/damages_header"
+            android:layout="@layout/empty" />
+
+        <LinearLayout
+            android:id="@+id/damages_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/damages_header"
+            android:orientation="vertical">
+
+            <com.margin.components.views.FlowLayout
+                android:id="@+id/flow_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="start|top"
+                android:layout_marginBottom="@dimen/spacing_normal"
+                android:layout_marginEnd="@dimen/spacing_normal"
+                android:layout_marginStart="@dimen/spacing_normal" />
+
+            <include layout="@layout/divider" />
+
+            <TextView
+                android:id="@+id/view_full_report"
+                style="@style/TextAppearance.Card.Footer"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/spacing_huge"
+                android:layout_marginEnd="@dimen/spacing_normal"
+                android:layout_marginStart="@dimen/spacing_normal"
+                android:padding="@dimen/spacing_smaller"
+                android:text="@string/content.view_full_report" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,111 @@
+<resources>
+    <string name="app_name">MGMS</string>
+
+    <!-- Titles -->
+    <string name="title.condition_report">Condition report</string>
+    <string name="title.login">Login</string>
+    <string name="title.details">Details</string>
+    <string name="title.damages">Condition</string>
+    <string name="title.dimensions">Dimensions</string>
+    <string name="title.locations">Locations</string>
+    <string name="title.photos">Photos</string>
+    <string name="title.contact">Contact</string>
+    <string name="title.summary">Summary</string>
+    <string name="title.sender">Sender</string>
+    <string name="title.receiver">Receiver</string>
+    <string name="title.ulds">ULDs</string>
+    <string name="title.photo_capture">Photo Capture</string>
+    <string name="title.task_management">Task Management</string>
+    <string name="title.total_pieces">Total pcs</string>
+    <string name="title.task_complete">Task Complete</string>
+    <string name="title.cargo_photo_capture">Cargo Photo Capture</string>
+    <string name="title.in_progress_by">In Progress by</string>
+    <string name="title.completed_by">Completed by</string>
+    <string name="title.origin">Origin</string>
+    <string name="title.destination">Destination</string>
+    <string name="title.hint.hawb_number">HAWB or MAWB Number</string>
+    <string name="title.share">Share</string>
+    <string name="title.to">To</string>
+    <string name="title.subject">Subject</string>
+    <string name="title.message_optional">Message (optional)</string>
+    <string name="title.share_photos">Share Photos</string>
+    <string name="title.send">Send</string>
+    <string name="title.picture_of_conditions_for">Pictures of Conditions for</string>
+    <string name="title.discard_email">Discard email?</string>
+    <string name="title.discard">Discard</string>
+    <string name="title.cancel">Cancel</string>
+    <string name="title.cannot_be_empty">Cannot be empty</string>
+
+    <!-- Menus -->
+    <string name="menu.action.complete">Complete</string>
+    <string name="menu.action.share">Share</string>
+    <string name="menu.action.logout">Logout</string>
+
+    <string name="menu.action.select_date">Select Date…</string>
+    <string name="value.config.date_format" formatted="false">%04d-%02d-%02d</string>
+
+    <string name="content.scan_your_card">Scan your employee card or enter your PIN</string>
+    <string name="content.ok">OK</string>
+    <string name="content.view_more_dimensions">View more dimensions</string>
+    <string name="content.view_more_locations">View more locations</string>
+    <string name="content.view_more_photos">View more photos</string>
+    <string name="content.view_full_report">View full report</string>
+    <string name="content.view_full_uld">View more ULDs</string>
+
+    <string name="error.wrong_pin_length">Wrong PIN length</string>
+    <string name="error.invalid_pin">The PIN that was entered is invalid</string>
+    <string name="error.invalid_email">%s is an invalid email address</string>
+    <string name="error.scanning_barcode">Error while scanning barcode</string>
+    <string name="error.empty_string">Empty</string>
+
+    <string name="message.no_internet">No internet</string>
+    <string name="message.photos.not_uploaded">Photos haven\'t been uploaded yet</string>
+
+    <string name="empty.no_photos_capture">No photos captured.</string>
+    <string name="empty.no_damages_recorded">No damages recorded.</string>
+    <string name="empty.no_locations_recorded">No locations recorded.</string>
+    <string name="empty.no_uld_recorded">No ULDs recorded.</string>
+    <string name="empty.no_location_specified">No location specified</string>
+
+    <!-- Task Manager -->
+    <string name="title.taskmanager">Task Manager</string>
+    <string name="value.completed" formatted="false">Completed: %s / %s</string>
+    <string name="message.task.locked">%s is locked</string>
+    <string name="message.task.loading">Loading tasks…</string>
+    <string name="message.task.not_found">Task cannot be found.</string>
+    <string name="message.task.not_exist">Task does not exist</string>
+    <string name="message.shipment.not_exist">Shipment does not exist</string>
+    <string name="message.task.prompt_create">Would you like to create a new task for %s?</string>
+    <string name="message.shipment.prompt_create">Would you like to create a new shipment for %s?</string>
+    <string name="message.hawb.not_found">House bill cannot be found on the server.</string>
+    <string name="message.mawb.not_found">Master bill cannot be found on the server.</string>
+    <string name="message.loading">Loading…</string>
+    <string name="message.performing_operation">Performing operation</string>
+    <string name="title.create">Create</string>
+    <string name="message.sending">Sending…</string>
+
+    <string name="inches">Inches</string>
+    <string name="pieces">Pieces</string>
+    <string name="placeholder.dimension_title" formatted="false">%sL x %sW x %sH&#160;</string>
+    <string name="placeholder.dimension_subtitle" formatted="false">%d/%s&#160;</string>
+    <string name="placeholder.location_subtitle" formatted="false">%s/%s&#160;</string>
+    <string name="placeholder.summary_subtitle" formatted="false">%d total pcs, %.2f %s</string>
+    <string name="placeholder.two_strings" formatted="false">%s %s</string>
+
+    <!-- Task Management -->
+    <string name="subtitle.tasks">Cargo Photo Capture</string>
+    <string name="header.assigned_to_me">Assigned to me</string>
+    <string name="header.not_assigned_to_me">Not assigned</string>
+    <string name="value.pieces_weight" formatted="false">%d total pcs, %.2f %s</string>
+    <string name="title.tasks.headline" formatted="false">%s-%s-%s</string>
+    <string name="title.tasks.location" formatted="false">%s (%s pcs)</string>
+    <plurals name="tasks_plurals">
+        <item quantity="one">1 task</item>
+        <item quantity="other">%d tasks</item>
+    </plurals>
+    <string-array name="spinner_tasks_values">
+        <item>Not Completed</item>
+        <item>Completed</item>
+    </string-array>
+
+</resources>

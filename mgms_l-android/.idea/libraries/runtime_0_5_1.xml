@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="runtime-0.5.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.squareup.sqldelight/runtime/0.5.1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.squareup.sqldelight/runtime/0.5.1/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.sqldelight/runtime/0.5.1/2e012a32573261c09b7e90215b8a13be8592fa60/runtime-0.5.1-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.sqldelight/runtime/0.5.1/2e012a32573261c09b7e90215b8a13be8592fa60/runtime-0.5.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

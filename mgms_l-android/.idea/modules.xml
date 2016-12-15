@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../Components/android-widget-barcode/barcode/barcode.iml" filepath="$PROJECT_DIR$/../../Components/android-widget-barcode/barcode/barcode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../Components/android-widget-camera/camera/camera.iml" filepath="$PROJECT_DIR$/../../Components/android-widget-camera/camera/camera.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../Components/android-components/components/components.iml" filepath="$PROJECT_DIR$/../../Components/android-components/components/components.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mgms_l-android.iml" filepath="$PROJECT_DIR$/mgms_l-android.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_photos"
+    style="@style/ImagesCard"
+    android:layout_marginEnd="@dimen/spacing_smaller"
+    android:layout_marginStart="@dimen/spacing_smaller">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_images"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:paddingEnd="2dp"
+        android:paddingStart="2dp"
+        android:scrollbars="none" />
+
+</android.support.v7.widget.CardView>

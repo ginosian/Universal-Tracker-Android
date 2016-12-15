@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.PhotoCaptureActivity">
+    <group android:id="@+id/task_management_group">
+        <item
+            android:id="@+id/action_search"
+            android:icon="@drawable/search_icon"
+            android:title="@android:string/search_go"
+            app:showAsAction="ifRoom" />
+    </group>
+    <group android:id="@+id/details_group">
+        <item
+            android:id="@+id/action_complete"
+            android:icon="@drawable/check_circle_icon_white"
+            android:title="@string/menu.action.complete"
+            app:showAsAction="ifRoom" />
+        <item
+            android:id="@+id/action_share"
+            android:icon="@drawable/share_icon_white"
+            android:title="@string/menu.action.share"
+            android:visible="false"
+            app:showAsAction="ifRoom"
+            tools:visible="true" />
+    </group>
+</menu>

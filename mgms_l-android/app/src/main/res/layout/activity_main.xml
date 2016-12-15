@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/main_login_bt"
+            style="@style/Button.Action"
+            android:layout_width="@dimen/button_width_large"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/title.login" />
+
+        <Button
+            android:id="@+id/main_damage_bt"
+            style="@style/Button.Action"
+            android:layout_width="@dimen/button_width_large"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/title.damages" />
+
+        <Button
+            android:id="@+id/main_task_manager_btn"
+            style="@style/Button.Action"
+            android:layout_width="@dimen/button_width_large"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/title.taskmanager" />
+
+        <Button
+            android:id="@+id/main_card_dimensions"
+            style="@style/Button.Action"
+            android:layout_width="@dimen/button_width_large"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/title.dimensions" />
+
+        <Button
+            android:id="@+id/main_card_locations"
+            style="@style/Button.Action"
+            android:layout_width="@dimen/button_width_large"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/title.locations" />
+
+        <Button
+            android:id="@+id/main_photo_capture"
+            style="@style/Button.Action"
+            android:layout_width="@dimen/button_width_large"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/title.photo_capture" />
+
+        <Button
+            android:id="@+id/main_task_management_btn"
+            style="@style/Button.Action"
+            android:layout_width="@dimen/button_width_large"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/title.task_management" />
+
+        <Button
+            android:id="@+id/card_contact"
+            style="@style/Button.Action"
+            android:layout_width="@dimen/button_width_large"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/title.contact" />
+
+        <Button
+            android:id="@+id/card_summary"
+            style="@style/Button.Action"
+            android:layout_width="@dimen/button_width_large"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/title.summary" />
+
+        <Button
+            android:id="@+id/card_uld"
+            style="@style/Button.Action"
+            android:layout_width="@dimen/button_width_large"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/title.ulds" />
+
+    </LinearLayout>
+
+</ScrollView>

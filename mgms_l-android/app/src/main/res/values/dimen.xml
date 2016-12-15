@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- typical spacing between two views -->
+    <dimen name="spacing_huge">48dp</dimen>
+    <dimen name="spacing_bigger">36dp</dimen>
+    <dimen name="spacing_big">30dp</dimen>
+    <dimen name="spacing_larger">24dp</dimen>
+    <dimen name="spacing_large">20dp</dimen>
+    <dimen name="spacing_normal">16dp</dimen>
+    <dimen name="spacing_small">12dp</dimen>
+    <dimen name="spacing_smaller">8dp</dimen>
+    <dimen name="spacing_smallest">6dp</dimen>
+    <dimen name="spacing_tiny">4dp</dimen>
+    <dimen name="spacing_tinier">2dp</dimen>
+    <dimen name="spacing_tiniest">1dp</dimen>
+
+    <!-- font sizes -->
+    <dimen name="font_huge">24sp</dimen>
+    <dimen name="font_bigger">22sp</dimen>
+    <dimen name="font_big">20sp</dimen>
+    <dimen name="font_larger">18sp</dimen>
+    <dimen name="font_large">16sp</dimen>
+    <dimen name="font_normal">14sp</dimen>
+    <dimen name="font_small">12sp</dimen>
+    <dimen name="font_smaller">10sp</dimen>
+    <dimen name="font_smallest">9sp</dimen>
+    <dimen name="font_tiny">8sp</dimen>
+
+    <dimen name="button_width_large">180dp</dimen>
+    <dimen name="photo_width">130dp</dimen>
+    <dimen name="photo_height">130dp</dimen>
+    <dimen name="photo_card_inner_padding">2dp</dimen>
+    <dimen name="image_height_damage_report">200dp</dimen>
+    <dimen name="button_corner_radius">6dp</dimen>
+    <dimen name="barcode_margin_top">60dp</dimen>
+    <dimen name="progressbar_size">76dp</dimen>
+    <dimen name="note_corner_radius">5dp</dimen>
+    <dimen name="location_bar_width">56dp</dimen>
+
+    <dimen name="card_corner_radius">2dp</dimen>
+    <dimen name="card_header_height">88dp</dimen>
+    <dimen name="card_dimensions_content_height">72dp</dimen>
+    <dimen name="card_locations_content_height">72dp</dimen>
+    <dimen name="card_uld_content_height">72dp</dimen>
+
+    <dimen name="z_card">4dp</dimen>
+    <dimen name="z_toolbar">4dp</dimen>
+    <dimen name="z_not_pressed">2dp</dimen>
+    <dimen name="z_pressed">6dp</dimen>
+    <dimen name="z_fab">6dp</dimen>
+
+    <dimen name="radius_tiniest">1dp</dimen>
+    <dimen name="radius_tiny">2dp</dimen>
+    <dimen name="radius_tinier">3dp</dimen>
+    <dimen name="radius_smallest">4dp</dimen>
+    <dimen name="radius_smaller">5dp</dimen>
+    <dimen name="radius_small">6dp</dimen>
+
+    <!-- Navigation Drawer -->
+    <dimen name="navigation_drawer_header_height">150dp</dimen>
+
+    <!-- Two-line list specs -->
+    <!-- https://www.google.com/design/spec/components/lists.html#lists-specs -->
+    <dimen name="icon_left_spacing">16dp</dimen>
+    <dimen name="list_item_left_spacing">72dp</dimen>
+    <dimen name="list_item_height">72dp</dimen>
+    <dimen name="list_right_spacing">16dp</dimen>
+
+    <!-- Task Management -->
+    <dimen name="header_height">56dp</dimen>
+
+</resources>
